@@ -1,0 +1,61 @@
+                          My Shorten Git Note
+                          ===================
+                         
+1. Untracked to Staging Area:
+                            Untracked Files: These are new files in your working directory that Git is not tracking. Staging Area (Index): This is where you place files that you want to include in the next commit.
+Commands:
+
+git add <file>: 
+              Adds files to the staging area.
+git status: 
+          Shows the status of changes as untracked, staged, or committed.
+2. Local Repository:
+                   Local Repository: The .git directory in your project where all your local changes are stored.
+Commands:
+
+git commit -m "message": Commits the staged changes to your local repository.
+git branch: Lists all branches.
+git checkout <branch>: Switches to another branch.
+git merge <branch>: Merges another branch into the current branch.
+git rebase <branch>: Reapplies commits on top of another base tip.
+git stash: Stashes changes in the working directory to clean it without committing them.
+git reset --hard <commit>: Resets the index and working directory to the specified commit.
+git cherry-pick <commit>: Applies the changes from a specific commit to the current branch.
+git squash <commit>: Combines multiple commits into one. Usually used during a rebase (git rebase -i).
+3. Remote Repository
+Remote Repository: A version of your project hosted on the internet or network, such as GitHub, GitLab, or Bitbucket.
+Commands:
+
+git clone <repository-url>: Clones a repository into a new directory.
+git fetch: Fetches changes from the remote repository but does not merge them.
+git pull: Fetches and merges changes from the remote repository.
+git push: Pushes local changes to the remote repository.
+git tag <tagname>: Creates a tag, which is a reference to a specific commit.
+.gitignore: A file specifying intentionally untracked files to ignore.
+Workflow Summary
+Untracked Files:
+
+Start with untracked files.
+Use git add <file> to stage the files.
+Staging Area:
+
+Use git status to see staged changes.
+Use git commit -m "message" to commit changes to the local repository.
+Local Repository:
+
+Create and switch branches with git branch and git checkout.
+Merge changes using git merge.
+Rebase branches with git rebase.
+Stash changes with git stash.
+Use git reset --hard to discard local changes.
+Apply specific changes with git cherry-pick.
+Squash commits with git squash.
+Remote Repository:
+
+Clone repositories using git clone.
+Fetch changes with git fetch.
+Pull changes using git pull.
+Push changes to the remote repository using git push.
+Tag commits with git tag.
+Use .gitignore to specify files to ignore.
+This workflow ensures that changes are tracked, committed, and synchronized between your local and remote repositories efficiently.
